@@ -31,8 +31,11 @@ function draw() {
     if(cat.x-mouse.x<(cat.width-mouse.width)/2){
      cat.addAnimation("catStop",catimg3);
      cat.changeAnimation("catStop");
+        cat.scale=0.2;
      mouse.addAnimation("mouseStop",mouseimg3);
      mouse.changeAnimation("mouseStop");
+        mouse.scale=0.2;
+     cat.velocityX=0;
     }
     
     drawSprites();
